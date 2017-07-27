@@ -24,5 +24,17 @@ namespace LiftOff
         {
             InitializeComponent();
         }
+
+        #region Window Events
+
+        private void HomeWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                DragMove();
+            }
+        }
+
+        #endregion
     }
 }
